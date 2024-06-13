@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>TO DO LIST</h1>
+            <h2>add item</h2>
+            <input type="text" id="add-item" placeholder="add your task"/>
+            <button id="button-task">add</button>
+            <h3>TO DO</h3>
+            <ul id="to-do-task">
+                <li>
+                    <!-- escutar de alguma forma que o valor do checkbox mudou e salvar no localstorage -->
+                    <input type="checkbox" name="doTask" value="Study" onchange="saveCheckBox(this)"><label>Estudar</label>
+                </li>
+                </li>
+            </ul>
+            <h3>DONE</h3>
+            <input type="checkbox" name="doneTask" value="Go to the market"/>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
